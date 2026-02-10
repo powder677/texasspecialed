@@ -34,46 +34,47 @@
                "url": "https://texasspecialed.com/images/texasspecialed-logo.png"
             }
          },
-         "blogPost": [{
+         "blogPost": [
+            {
                "@type": "BlogPosting",
                "headline": "What to Do When Your Texas School District Denies an Evaluation Request",
-               "url": "https://texasspecialed.com/blog/what-to-do-when-school-denies-evaluation.html",
+               "url": "https://texasspecialed.com/blog/what-to-do-when-school-denies-evaluation/",
                "datePublished": "2026-01-15"
             },
             {
                "@type": "BlogPosting",
                "headline": "10 Questions Every Texas Parent Should Ask at Their ARD Meeting",
-               "url": "https://texasspecialed.com/blog/10-questions-to-ask-at-ard-meeting.html",
+               "url": "https://texasspecialed.com/blog/10-questions-to-ask-at-ard-meeting/",
                "datePublished": "2026-01-08"
             },
             {
                "@type": "BlogPosting",
                "headline": "Understanding the FIIE: What Texas Parents Need to Know About Evaluations",
-               "url": "https://texasspecialed.com/blog/understanding-fiie-texas.html",
+               "url": "https://texasspecialed.com/blog/understanding-fiie-texas/",
                "datePublished": "2026-01-02"
             },
             {
                "@type": "BlogPosting",
                "headline": "How to Write Measurable IEP Goals (With Texas TEKS Alignment Examples)",
-               "url": "https://texasspecialed.com/blog/how-to-write-measurable-iep-goals.html",
+               "url": "https://texasspecialed.com/blog/how-to-write-measurable-iep-goals/",
                "datePublished": "2025-12-18"
             },
             {
                "@type": "BlogPosting",
                "headline": "Your Rights as a Texas Special Education Parent: A Complete Guide",
-               "url": "https://texasspecialed.com/blog/texas-parent-rights-special-education.html",
+               "url": "https://texasspecialed.com/blog/texas-parent-rights-special-education/",
                "datePublished": "2025-12-10"
             },
             {
                "@type": "BlogPosting",
                "headline": "How to Disagree at an ARD Meeting Without Burning Bridges",
-               "url": "https://texasspecialed.com/blog/how-to-disagree-at-ard-meeting.html",
+               "url": "https://texasspecialed.com/blog/how-to-disagree-at-ard-meeting/",
                "datePublished": "2025-11-20"
             },
             {
                "@type": "BlogPosting",
                "headline": "When and How to Request an Independent Educational Evaluation (IEE) in Texas",
-               "url": "https://texasspecialed.com/blog/independent-educational-evaluation-texas.html",
+               "url": "https://texasspecialed.com/blog/independent-educational-evaluation-texas/",
                "datePublished": "2025-11-05"
             }
          ]
@@ -119,6 +120,8 @@
          font-weight: 500;
          text-decoration: none;
          transition: all 0.2s;
+         cursor: pointer;
+         font-family: inherit;
       }
 
       .category-tag:hover,
@@ -329,7 +332,7 @@
                <li class="nav-item"><a href="/blog/" class="nav-link active">Blog</a></li>
                <li class="nav-item"><a href="/about/" class="nav-link">About</a></li>
                <li class="nav-item"><a href="/contact/" class="nav-link">Contact</a></li>
-               <li class="nav-item nav-cta"><a href="/resources/ard-checklist.pdf" class="button-primary">Get Free ARD Checklist</a></li>
+               <li class="nav-item nav-cta"><a href="/resources/ard-checklist" class="button-primary">Get Free ARD Checklist</a></li>
             </ul>
          </div>
       </nav>
@@ -352,99 +355,112 @@
 
       <section>
          <div class="container">
-            <div class="blog-categories">
-               <a href="/blog/" class="category-tag active">All Posts</a>
-               <a href="/blog/category/ard-meetings/" class="category-tag">ARD Meetings</a>
-               <a href="/blog/category/evaluations/" class="category-tag">Evaluations</a>
-               <a href="/blog/category/iep-goals/" class="category-tag">IEP Goals</a>
-               <a href="/blog/category/parent-rights/" class="category-tag">Parent Rights</a>
-               <a href="/blog/category/district-updates/" class="category-tag">District Updates</a>
+            <div class="blog-categories" role="tablist" aria-label="Filter blog posts by category">
+               <button class="category-tag active" data-filter="all" role="tab" aria-selected="true">All Posts</button>
+               <button class="category-tag" data-filter="ard-meetings" role="tab" aria-selected="false">ARD Meetings</button>
+               <button class="category-tag" data-filter="evaluations" role="tab" aria-selected="false">Evaluations</button>
+               <button class="category-tag" data-filter="iep-goals" role="tab" aria-selected="false">IEP Goals</button>
+               <button class="category-tag" data-filter="parent-rights" role="tab" aria-selected="false">Parent Rights</button>
+               <button class="category-tag" data-filter="district-updates" role="tab" aria-selected="false">District Updates</button>
             </div>
 
-            <div class="featured-post">
+            <div class="no-results" style="display:none; text-align:center; padding:3rem 1rem; color:#666;">
+               <p style="font-size:1.1rem;">No posts in this category yet. Check back soon — new articles are published monthly.</p>
+               <button class="category-tag" data-filter="all" style="margin-top:1rem;">View All Posts</button>
+            </div>
+
+            <!-- ═══ FEATURED POST ═══ -->
+            <div class="featured-post" data-category="evaluations">
                <span class="featured-label">Featured</span>
-               <h3><a href="what-to-do-when-school-denies-evaluation.html">What to Do When Your Texas School District Denies an Evaluation Request</a></h3>
+               <h3><a href="what-to-do-when-school-denies-evaluation/">What to Do When Your Texas School District Denies an Evaluation Request</a></h3>
                <p>If your district denied your child's evaluation request, don't panic. Texas law gives you specific options — from requesting Prior Written Notice to filing a TEA complaint. Here's exactly what to do next, step by step.</p>
-               <a href="what-to-do-when-school-denies-evaluation.html" class="read-more">Read the full guide →</a>
+               <a href="what-to-do-when-school-denies-evaluation/" class="read-more">Read the full guide →</a>
             </div>
 
+            <!-- ═══ BLOG GRID ═══ -->
             <div class="blog-grid">
 
-               <article class="blog-card">
+               <!-- Card 1: 10 Questions – ARD Meetings -->
+               <article class="blog-card" data-category="ard-meetings">
                   <div class="blog-card-image">🏫</div>
                   <div class="blog-card-body">
                      <div class="blog-card-meta">
                         <span>January 8, 2026</span>
                         <span>ARD Meetings</span>
                      </div>
-                     <h3><a href="10-questions-to-ask-at-ard-meeting.html">10 Questions Every Texas Parent Should Ask at Their ARD Meeting</a></h3>
+                     <h3><a href="10-questions-to-ask-at-ard-meeting/">10 Questions Every Texas Parent Should Ask at Their ARD Meeting</a></h3>
                      <p>Walking into an ARD meeting without a plan is like showing up to court without a lawyer. These 10 questions will help you stay focused and get answers.</p>
-                     <a href="10-questions-to-ask-at-ard-meeting.html" class="read-more">Read more →</a>
+                     <a href="10-questions-to-ask-at-ard-meeting/" class="read-more">Read more →</a>
                   </div>
                </article>
 
-               <article class="blog-card">
+               <!-- Card 2: FIIE – Evaluations -->
+               <article class="blog-card" data-category="evaluations">
                   <div class="blog-card-image">📋</div>
                   <div class="blog-card-body">
                      <div class="blog-card-meta">
                         <span>January 2, 2026</span>
                         <span>Evaluations</span>
                      </div>
-                     <h3><a href="understanding-fiie-texas.html">Understanding the FIIE: What Texas Parents Need to Know About Evaluations</a></h3>
+                     <h3><a href="understanding-fiie-texas/">Understanding the FIIE: What Texas Parents Need to Know About Evaluations</a></h3>
                      <p>A Full Individual Initial Evaluation is the gateway to special education services. Here's what gets tested, how long it takes, and what happens after.</p>
-                     <a href="understanding-fiie-texas.html" class="read-more">Read more →</a>
+                     <a href="understanding-fiie-texas/" class="read-more">Read more →</a>
                   </div>
                </article>
 
-               <article class="blog-card">
+               <!-- Card 3: Measurable Goals – IEP Goals -->
+               <article class="blog-card" data-category="iep-goals">
                   <div class="blog-card-image">🎯</div>
                   <div class="blog-card-body">
                      <div class="blog-card-meta">
                         <span>December 18, 2025</span>
                         <span>IEP Goals</span>
                      </div>
-                     <h3><a href="how-to-write-measurable-iep-goals.html">How to Write Measurable IEP Goals (With Texas TEKS Alignment Examples)</a></h3>
+                     <h3><a href="how-to-write-measurable-iep-goals/">How to Write Measurable IEP Goals (With Texas TEKS Alignment Examples)</a></h3>
                      <p>Vague IEP goals lead to vague progress. Learn the formula for writing goals that are specific, measurable, and aligned to Texas standards.</p>
-                     <a href="how-to-write-measurable-iep-goals.html" class="read-more">Read more →</a>
+                     <a href="how-to-write-measurable-iep-goals/" class="read-more">Read more →</a>
                   </div>
                </article>
 
-               <article class="blog-card">
+               <!-- Card 4: Parent Rights – Parent Rights -->
+               <article class="blog-card" data-category="parent-rights">
                   <div class="blog-card-image">⚖️</div>
                   <div class="blog-card-body">
                      <div class="blog-card-meta">
                         <span>December 10, 2025</span>
                         <span>Parent Rights</span>
                      </div>
-                     <h3><a href="texas-parent-rights-special-education.html">Your Rights as a Texas Special Education Parent: A Complete Guide</a></h3>
+                     <h3><a href="texas-parent-rights-special-education/">Your Rights as a Texas Special Education Parent: A Complete Guide</a></h3>
                      <p>IDEA gives you powerful protections. Texas adds more. Here's a plain-language breakdown of every right you have — from consent to due process.</p>
-                     <a href="texas-parent-rights-special-education.html" class="read-more">Read more →</a>
+                     <a href="texas-parent-rights-special-education/" class="read-more">Read more →</a>
                   </div>
                </article>
 
-               <article class="blog-card">
+               <!-- Card 5: How to Disagree – ARD Meetings -->
+               <article class="blog-card" data-category="ard-meetings">
                   <div class="blog-card-image">📧</div>
                   <div class="blog-card-body">
                      <div class="blog-card-meta">
                         <span>November 20, 2025</span>
                         <span>ARD Meetings</span>
                      </div>
-                     <h3><a href="how-to-disagree-at-ard-meeting.html">How to Disagree at an ARD Meeting Without Burning Bridges</a></h3>
+                     <h3><a href="how-to-disagree-at-ard-meeting/">How to Disagree at an ARD Meeting Without Burning Bridges</a></h3>
                      <p>You have the right to disagree — and you don't have to sign the IEP. Here's how to push back effectively while keeping the relationship constructive.</p>
-                     <a href="how-to-disagree-at-ard-meeting.html" class="read-more">Read more →</a>
+                     <a href="how-to-disagree-at-ard-meeting/" class="read-more">Read more →</a>
                   </div>
                </article>
 
-               <article class="blog-card">
+               <!-- Card 6: IEE – Evaluations -->
+               <article class="blog-card" data-category="evaluations">
                   <div class="blog-card-image">🔍</div>
                   <div class="blog-card-body">
                      <div class="blog-card-meta">
                         <span>November 5, 2025</span>
                         <span>Evaluations</span>
                      </div>
-                     <h3><a href="independent-educational-evaluation-texas.html">When and How to Request an Independent Educational Evaluation (IEE) in Texas</a></h3>
+                     <h3><a href="independent-educational-evaluation-texas/">When and How to Request an Independent Educational Evaluation (IEE) in Texas</a></h3>
                      <p>If you disagree with the school's evaluation, you may be entitled to an Independent Educational Evaluation at the district's expense. Here's how it works.</p>
-                     <a href="independent-educational-evaluation-texas.html" class="read-more">Read more →</a>
+                     <a href="independent-educational-evaluation-texas/" class="read-more">Read more →</a>
                   </div>
                </article>
 
@@ -496,10 +512,10 @@
             <div class="footer-column">
                <h3 class="footer-heading">Free Resources</h3>
                <ul class="footer-links">
-                  <li><a href="/resources/ard-checklist.pdf">ARD Meeting Checklist</a></li>
-                  <li><a href="/resources/evaluation-request-template.pdf">Evaluation Request Letter</a></li>
-                  <li><a href="/resources/iep-goal-tracker.pdf">IEP Goal Tracker</a></li>
-                  <li><a href="/resources/parent-rights-guide.pdf">Parent Rights Guide</a></li>
+                  <li><a href="/resources/ard-checklist">ARD Meeting Checklist</a></li>
+                  <li><a href="/resources/evaluation-request-template">Evaluation Request Letter</a></li>
+                  <li><a href="/resources/iep-goal-tracker">IEP Goal Tracker</a></li>
+                  <li><a href="/resources/parent-rights-guide">Parent Rights Guide</a></li>
                </ul>
                <h3 class="footer-heading" style="margin-top: 1.5rem;">Stay Updated</h3>
                <form action="/subscribe" method="post" class="footer-subscribe">
@@ -510,7 +526,7 @@
          </div>
          <div class="footer-bottom">
             <div class="footer-legal">
-               <p>© 2026 TexasSpecialEd.com. All rights reserved.</p>
+               <p>&copy; 2026 TexasSpecialEd.com. All rights reserved.</p>
                <nav class="footer-legal-links">
                   <a href="/privacy-policy/">Privacy Policy</a>
                   <span class="separator">|</span>
@@ -525,6 +541,54 @@
          </div>
       </div>
    </footer>
+
+   <script>
+      (function () {
+         var buttons = document.querySelectorAll('[data-filter]');
+         var featured = document.querySelector('.featured-post');
+         var cards = document.querySelectorAll('.blog-card');
+         var grid = document.querySelector('.blog-grid');
+         var noResults = document.querySelector('.no-results');
+
+         function filterPosts(category) {
+            // Update active button
+            buttons.forEach(function (btn) {
+               var isActive = btn.getAttribute('data-filter') === category;
+               btn.classList.toggle('active', isActive);
+               btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            var visibleCount = 0;
+
+            // Filter featured post
+            if (category === 'all' || featured.getAttribute('data-category') === category) {
+               featured.style.display = '';
+               visibleCount++;
+            } else {
+               featured.style.display = 'none';
+            }
+
+            // Filter cards
+            cards.forEach(function (card) {
+               if (category === 'all' || card.getAttribute('data-category') === category) {
+                  card.style.display = '';
+                  visibleCount++;
+               } else {
+                  card.style.display = 'none';
+               }
+            });
+
+            // Show/hide no-results message
+            noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+         }
+
+         buttons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+               filterPosts(this.getAttribute('data-filter'));
+            });
+         });
+      })();
+   </script>
 
 </body>
 
