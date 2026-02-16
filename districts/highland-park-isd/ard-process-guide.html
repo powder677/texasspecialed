@@ -12,7 +12,7 @@
 
 <body>
 
-   <header class="site-header">
+  <header class="site-header">
       <nav class="navbar" role="navigation" aria-label="Main navigation">
          <div class="nav-container">
             <div class="nav-logo">
@@ -20,9 +20,23 @@
                   <img src="/images/texasspecialed-logo.png" alt="Texas Special Ed" width="200" height="60">
                </a>
             </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+               <span class="hamburger"></span>
+               <span class="hamburger"></span>
+               <span class="hamburger"></span>
+            </button>
             <ul class="nav-menu">
                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-               <li class="nav-item"><a href="/districts/" class="nav-link">Districts</a></li>
+               <li class="nav-item dropdown">
+                  <a href="/districts/" class="nav-link dropdown-toggle" aria-haspopup="true">Districts <span class="dropdown-arrow">▼</span></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="/districts/">All Texas Districts</a></li>
+                     <li class="dropdown-divider"></li>
+                     <li><a href="/districts/round-rock-isd">Round Rock ISD</a></li>
+                     <li><a href="/districts/lewisville-isd">Lewisville ISD</a></li>
+                     <li><a href="/districts/">View All Districts →</a></li>
+                  </ul>
+               </li>
                <li class="nav-item"><a href="/resources/" class="nav-link">Free Resources</a></li>
                <li class="nav-item nav-cta">
                   <a href="/resources/ard-checklist.pdf" class="button-primary">Get Free ARD Checklist</a>
