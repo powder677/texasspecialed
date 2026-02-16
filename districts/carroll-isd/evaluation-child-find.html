@@ -207,7 +207,20 @@
             <p class="lead">Essential guidance for Southlake families. Learn how to start the evaluation process, understand Texas timelines, and advocate for your child's needs in Carroll Independent School District.</p>
          </div>
       </section>
-
+           <div style="background-color: #1e293b; border: 2px solid #94a3b8; padding: 28px; margin: 30px 0; border-radius: 8px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2); color: white;">
+    <h3 style="margin-top: 0; color: #cbd5e1; font-family: 'Georgia', serif; font-size: 1.5rem; letter-spacing: 0.02em; border-bottom: 1px solid #475569; padding-bottom: 12px; margin-bottom: 16px;">🔍 Struggling to get a diagnosis?</h3>
+    
+    <p style="color: #e2e8f0; margin-bottom: 20px; font-family: sans-serif; line-height: 1.6; font-size: 1.05rem;">Stop the delay tactics. The <strong>Dyslexia Parent Support Toolkit</strong> provides the formal request letters to trigger the 15-45-30 evaluation timeline immediately.</p>
+    
+    <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 24px;">
+        <div style="background: #334155; height: 4px; flex-grow: 1; border-radius: 2px;">
+            <div style="background: #38bdf8; width: 60%; height: 100%; border-radius: 2px;"></div>
+        </div>
+        <span style="color: #38bdf8; font-weight: bold; font-size: 0.9rem;">HB 3928 Compliant</span>
+    </div>
+    
+    <a href="https://buy.stripe.com/14A00i5S5eesd0jgXbbbG0J" style="background-color: #f8fafc; color: #0f172a; padding: 14px 28px; text-decoration: none; border-radius: 4px; font-weight: 700; font-family: sans-serif; display: inline-block; text-transform: uppercase; letter-spacing: 0.05em; border: 1px solid #e2e8f0;">Download Evaluation Tools - $37</a>
+</div>
       <section class="aeo-faq-container" style="background: #f9f9f9; padding: 2rem 0; border-bottom: 1px solid #eee;">
          <div class="container">
             <h2>Common Questions About Carroll ISD Evaluations</h2>
@@ -474,7 +487,38 @@ Sincerely,
             </nav>
          </div>
       </div>
-   </footer>
+   </footer>                                    <script>
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYVaXK8FUpzyC5ij59maP0aMF2Ww6DM5X4ChBnqJS9FxkuU0mDaGuYMx8tbEpiJX7j/exec';
+
+document.querySelectorAll('.subscribe-form, .footer-subscribe').forEach(function(form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    var button = form.querySelector('button[type="submit"]');
+    var email = form.querySelector('input[type="email"]').value;
+    var districtInput = form.querySelector('input[name="district"]');
+    var district = districtInput ? districtInput.value : '';
+    
+    button.disabled = true;
+    button.textContent = 'Sending...';
+    
+    fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, district: district })
+    })
+    .then(function() {
+      form.innerHTML = '<p style="color: green; font-weight: 600;">✓ You\'re subscribed!</p>';
+    })
+    .catch(function() {
+      button.disabled = false;
+      button.textContent = 'Subscribe';
+      alert('Something went wrong. Please try again.');
+    });
+  });
+});
+</script>
 
 </body>
 
