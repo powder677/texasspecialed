@@ -97,10 +97,6 @@
    </script>
 
    <style>
-      /* ============================================
-         STORE PAGE — CUSTOM STYLES
-         ============================================ */
-
       :root {
          --navy: #002868;
          --navy-deep: #001a44;
@@ -122,7 +118,6 @@
          font-family: 'DM Sans', -apple-system, sans-serif;
       }
 
-      /* ---------- HERO ---------- */
       .store-hero {
          background: var(--navy-deep);
          color: #fff;
@@ -177,7 +172,6 @@
          line-height: 1.7;
       }
 
-      /* ---------- TRUST BAR ---------- */
       .trust-bar {
          background: var(--sand);
          border-bottom: 1px solid var(--border);
@@ -200,11 +194,8 @@
          color: var(--text-mid);
       }
 
-      .trust-icon {
-         font-size: 1.1rem;
-      }
+      .trust-icon { font-size: 1.1rem; }
 
-      /* ---------- PRODUCT GRID ---------- */
       .store-grid-section {
          background: var(--warm-white);
          padding: 4.5rem 0 5rem;
@@ -232,7 +223,6 @@
          gap: 2rem;
       }
 
-      /* ---------- PRODUCT CARD ---------- */
       .product-card {
          background: #fff;
          border: 1px solid var(--border);
@@ -248,10 +238,7 @@
          transform: translateY(-3px);
       }
 
-      .card-accent {
-         height: 5px;
-      }
-
+      .card-accent { height: 5px; }
       .card-accent.accent-blue    { background: var(--navy); }
       .card-accent.accent-red     { background: var(--red); }
       .card-accent.accent-gold    { background: var(--gold); }
@@ -382,148 +369,9 @@
          transform: translateY(-1px);
       }
 
-      .btn-buy .arrow {
-         transition: transform 0.2s;
-      }
+      .btn-buy .arrow { transition: transform 0.2s; }
+      .btn-buy:hover .arrow { transform: translateX(3px); }
 
-      .btn-buy:hover .arrow {
-         transform: translateX(3px);
-      }
-
-      /* ---------- FEATURED / FLAGSHIP ---------- */
-      .flagship-section {
-         background: var(--sand);
-         padding: 5rem 0;
-         border-top: 1px solid var(--border);
-         border-bottom: 1px solid var(--border);
-      }
-
-      .flagship-inner {
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-         gap: 4rem;
-         align-items: center;
-      }
-
-      .flagship-content .eyebrow {
-         display: inline-block;
-         font-size: 0.7rem;
-         font-weight: 700;
-         letter-spacing: 0.15em;
-         text-transform: uppercase;
-         color: var(--red);
-         margin-bottom: 1rem;
-      }
-
-      .flagship-content h2 {
-         font-family: 'Source Serif 4', Georgia, serif;
-         font-size: 2.2rem;
-         font-weight: 800;
-         color: var(--text-dark);
-         line-height: 1.2;
-         margin-bottom: 1rem;
-      }
-
-      .flagship-content .pitch {
-         font-size: 1.05rem;
-         color: var(--text-mid);
-         line-height: 1.8;
-         margin-bottom: 1.5rem;
-      }
-
-      .flagship-content .pitch strong {
-         color: var(--text-dark);
-      }
-
-      .flagship-features {
-         list-style: none;
-         padding: 0;
-         margin: 0 0 2rem;
-      }
-
-      .flagship-features li {
-         font-size: 0.95rem;
-         color: var(--text-mid);
-         padding: 0.5rem 0;
-         padding-left: 1.6rem;
-         position: relative;
-         line-height: 1.6;
-      }
-
-      .flagship-features li::before {
-         content: '→';
-         position: absolute;
-         left: 0;
-         color: var(--red);
-         font-weight: 700;
-      }
-
-      .flagship-visual {
-         background: var(--navy-deep);
-         border-radius: var(--radius);
-         padding: 3rem 2.5rem;
-         color: #fff;
-         position: relative;
-         overflow: hidden;
-      }
-
-      .flagship-visual::before {
-         content: '';
-         position: absolute;
-         width: 300px;
-         height: 300px;
-         border-radius: 50%;
-         background: rgba(200,16,46,0.08);
-         top: -100px;
-         right: -80px;
-      }
-
-      .flagship-visual .quote-mark {
-         font-family: 'Source Serif 4', Georgia, serif;
-         font-size: 5rem;
-         line-height: 1;
-         color: rgba(255,255,255,0.12);
-         position: absolute;
-         top: 1rem;
-         left: 1.5rem;
-      }
-
-      .flagship-visual blockquote {
-         position: relative;
-         z-index: 1;
-         font-family: 'Source Serif 4', Georgia, serif;
-         font-size: 1.15rem;
-         font-style: italic;
-         line-height: 1.8;
-         color: rgba(255,255,255,0.9);
-         margin: 0;
-         padding: 0;
-      }
-
-      .flagship-visual .visual-stat {
-         margin-top: 2rem;
-         padding-top: 1.5rem;
-         border-top: 1px solid rgba(255,255,255,0.15);
-         display: flex;
-         gap: 2.5rem;
-      }
-
-      .visual-stat-item .stat-number {
-         font-family: 'Source Serif 4', Georgia, serif;
-         font-size: 2rem;
-         font-weight: 800;
-         color: var(--gold);
-         display: block;
-      }
-
-      .visual-stat-item .stat-label {
-         font-size: 0.78rem;
-         color: rgba(255,255,255,0.6);
-         text-transform: uppercase;
-         letter-spacing: 0.06em;
-      }
-
-      /* ---------- FAQ ---------- */
       .store-faq {
          padding: 4.5rem 0;
          background: var(--warm-white);
@@ -537,10 +385,7 @@
          margin-bottom: 2.5rem;
       }
 
-      .faq-list {
-         max-width: 720px;
-         margin: 0 auto;
-      }
+      .faq-list { max-width: 720px; margin: 0 auto; }
 
       .faq-item {
          border-bottom: 1px solid var(--border);
@@ -574,9 +419,7 @@
          flex-shrink: 0;
       }
 
-      .faq-item.open .faq-question .toggle {
-         transform: rotate(45deg);
-      }
+      .faq-item.open .faq-question .toggle { transform: rotate(45deg); }
 
       .faq-answer {
          max-height: 0;
@@ -595,7 +438,6 @@
          line-height: 1.7;
       }
 
-      /* ---------- BOTTOM CTA ---------- */
       .store-bottom-cta {
          background: var(--navy-deep);
          color: #fff;
@@ -636,21 +478,10 @@
          padding: 0.9rem 2rem;
       }
 
-      /* ---------- RESPONSIVE ---------- */
-      @media (max-width: 900px) {
-         .flagship-inner {
-            grid-template-columns: 1fr;
-            gap: 2.5rem;
-         }
-      }
-
       @media (max-width: 768px) {
          .store-hero h1 { font-size: 2.1rem; }
          .product-grid { grid-template-columns: 1fr; }
          .trust-items { gap: 1.25rem; }
-         .flagship-content h2 { font-size: 1.75rem; }
-         .flagship-visual { padding: 2rem 1.5rem; }
-         .visual-stat { flex-direction: column; gap: 1rem; }
       }
 
       @media (max-width: 480px) {
@@ -692,7 +523,7 @@
                   </ul>
                </li>
                <li class="nav-item"><a href="/resources" class="nav-link">Free Resources</a></li>
-               <li class="nav-item"><a href="/store" class="nav-link active">Toolkits</a></li>
+               <li class="nav-item"><a href="/store" class="nav-link">Toolkits</a></li>
                <li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
                <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
                <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
@@ -710,7 +541,6 @@
          </div>
       </nav>
 
-      <!-- ===== HERO ===== -->
       <section class="store-hero">
          <div class="container">
             <span class="eyebrow">Texas-Specific Parent Toolkits</span>
@@ -719,7 +549,6 @@
          </div>
       </section>
 
-      <!-- ===== TRUST BAR ===== -->
       <section class="trust-bar">
          <div class="container">
             <div class="trust-items">
@@ -731,47 +560,6 @@
          </div>
       </section>
 
-      <!-- ===== FLAGSHIP PRODUCT ===== -->
-      <section class="flagship-section">
-         <div class="container">
-            <div class="flagship-inner">
-               <div class="flagship-content">
-                  <span class="eyebrow">Most Popular</span>
-                  <h2>ADHD Executive Function Mastery Bundle</h2>
-                  <p class="pitch">How many times has your child <strong>done the homework but lost it before turning it in?</strong> That isn't laziness — it's an Executive Function failure.</p>
-                  <p class="pitch">Standard planners track tasks, not time. This system builds the <strong>external scaffolding</strong> ADHD brains actually need — from a "Dopamine Menu" that makes breaks productive to a "Submission Ritual" that ensures work gets turned in.</p>
-                  <ul class="flagship-features">
-                     <li>Addresses the 5 Failure Points: Capture, Consolidation, Retrieval, Completion, Submission</li>
-                     <li>Visual "Time-Mapper" planners designed for how ADHD brains process time</li>
-                     <li>Fillable digital forms for tablets + printable PDFs</li>
-                     <li>Tangible tools: "Bag Tags" and "Door Checklists" to bridge home → school</li>
-                     <li>Available in 3 tiers — from quick-start Essentials to the full 150+ page system</li>
-                  </ul>
-                  <a href="https://buy.stripe.com/4gMdR85S5b2ggcvgXbbbG0K" class="btn-buy">Get the Bundle <span class="arrow">→</span></a>
-               </div>
-               <div class="flagship-visual">
-                  <span class="quote-mark">"</span>
-                  <blockquote>My son went from missing 4 out of 5 assignments a week to turning in everything. The Door Checklist alone was a game-changer. I wish I'd had this two years ago.</blockquote>
-                  <div class="visual-stat">
-                     <div class="visual-stat-item">
-                        <span class="stat-number">150+</span>
-                        <span class="stat-label">Pages of Tools</span>
-                     </div>
-                     <div class="visual-stat-item">
-                        <span class="stat-number">Gr 4–8</span>
-                        <span class="stat-label">Designed For</span>
-                     </div>
-                     <div class="visual-stat-item">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Tier Options</span>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <!-- ===== ALL PRODUCTS ===== -->
       <section class="store-grid-section">
          <div class="container">
             <h2>All Toolkits</h2>
@@ -932,7 +720,6 @@
          </div>
       </section>
 
-      <!-- ===== FAQ ===== -->
       <section class="store-faq">
          <div class="container">
             <h2>Common Questions</h2>
@@ -992,7 +779,6 @@
          </div>
       </section>
 
-      <!-- ===== BOTTOM CTA ===== -->
       <section class="store-bottom-cta">
          <div class="container">
             <h2>Your child's next ARD meeting<br>is already on the calendar.</h2>
@@ -1066,21 +852,17 @@
       </div>
    </footer>
 
-   <!-- FAQ Toggle -->
    <script>
    document.querySelectorAll('.faq-question').forEach(function(btn) {
       btn.addEventListener('click', function() {
          var item = this.closest('.faq-item');
          var isOpen = item.classList.contains('open');
-         // Close all
          document.querySelectorAll('.faq-item').forEach(function(el) { el.classList.remove('open'); });
-         // Toggle current
          if (!isOpen) item.classList.add('open');
       });
    });
    </script>
 
-   <!-- Google Sheets Subscribe -->
    <script>
    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYVaXK8FUpzyC5ij59maP0aMF2Ww6DM5X4ChBnqJS9FxkuU0mDaGuYMx8tbEpiJX7j/exec';
 
